@@ -10,6 +10,12 @@ void print_state(enum State s) {
     case RUNNING:
       printf("State: RUNNING\n");
       break;
+    case PAUSED:
+      printf("State: Paused\n");
+      break;
+    case DONE:
+      printf("State: DONE\n");
+      break;
   }
 }
 
