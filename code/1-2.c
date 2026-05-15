@@ -11,7 +11,7 @@ int mul(int a, int b) {
 }
 
 int main(void) {
-  BinOp ops[2] = {add, mul}
+  BinOp ops[2] = {add, mul};
 
   for(int i=0;i<2;i++) {
      printf("%d\n", ops[i](3,4));
