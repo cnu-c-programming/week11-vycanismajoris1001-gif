@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 int cmp_asc(const void* a, const void* b) {
-  return *(const void*)a - *(const void*)b;
+  return *(const int*)a - *(const int*)b;
 }
 
 int cmp_desc(const void* a, const void* b) {
-  return *(const void*)b - *(const void*)a;
+  return *(const int*)b - *(const int*)a;
 }
 
 void print_arr(int* arr, int size) {
@@ -17,7 +17,7 @@ void print_arr(int* arr, int size) {
 }
 
 int main(void) {
-  int arr[] - {5, 2, 8, 1, 9, 3};
+  int arr[] = {5, 2, 8, 1, 9, 3};
   int size = 6;
 
   qsort(arr, 6, sizeof(int), cmp_asc);
