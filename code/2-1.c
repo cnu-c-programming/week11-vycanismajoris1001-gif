@@ -2,7 +2,7 @@
 
 enum State { IDLE, RUNNING, PAUSED, DONE };
 
-void print_state(enum State S) {
+void print_state(enum State s) {
   switch (s) {
     case IDLE: 
       printf("State: IDLE\n");
