@@ -3,7 +3,7 @@
 #include <string.h>
 
 int cmp_str(const void* a, const void* b) {
-  return *(const char*)a - *(const char*)b;
+  return *(const char*)b - *(const char*)a;
 }
 
 int main(void) {
